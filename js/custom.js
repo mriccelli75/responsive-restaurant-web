@@ -26,4 +26,11 @@ var swiper = new Swiper(".home-slider", {
       el: ".swiper-pagination",
       clickable: true,
     },
-  });
+});
+var swiper = new Swiper(".review-slider", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+   
+});

@@ -377,6 +377,45 @@ header .icons #menu-bars {
     font-size: 2.5rem;
     margin-left: 1rem;
 }
+.review-slider .slide {
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border: .1rem solid rgba(0,0,0, .1);
+    position: relative;
+
+}
+.review-slider .slide .fa-quote-right {
+    position: absolute;
+    top: 2rem; right: 2rem;
+    font-size: 6rem;
+    color: #ccc;
+}
+.review-slider .slide .user {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+.review-slider .slide .user img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review-slider .slide .user h3 {
+    color: var(--black);
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+.review-slider .slide .user i {
+    font-size: 1.3rem;
+    color: var(--green);
+}
+.review-slider .slide p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+}
 @media (max-width:768px) {
     header .icons #menu-bars {
         display: inline-block;
@@ -416,7 +455,48 @@ header .icons #menu-bars {
     }
 }
 
-
+.orders form {
+    max-width: 90rem;
+    background: #fff;
+    border: .1rem solid rgba(0,0,0, .1);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.orders form .inputBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.orders form .inputBox .input {
+    width: 49%;
+}
+.orders form .inputBox .input label {
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+.orders form .inputBox .input input,
+.orders form .inputBox .input textarea {
+    background: #eee;
+    border-radius: .5rem;
+    padding: 2rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.orders form .inputBox .input input:focus,
+.orders form .inputBox .input textarea:focus {
+    border: 1px solid var(--green);
+}
+.orders form .inputBox .input textarea {
+    height: 20rem;
+    resize: none;
+}
 /* Media Queries */
 @media (max-width:940px) {
     html {
@@ -424,5 +504,17 @@ header .icons #menu-bars {
     }
     header {
         padding: 1rem 2rem;
+    }
+    .orders form .inputBox .input {
+        width: 100%;
+    }
+}
+@media (max-width:450px) {
+    .dishes .box-container .box img {
+        height: auto;
+        width: 100%;
+    }
+    .order form .inputBox .input {
+        width: 100%;
     }
 }
